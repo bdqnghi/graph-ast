@@ -35,8 +35,7 @@ For example, the edge:
 ```
 22,3 1 21,4
 ```
-means that the node with id 22 connect to node with id 21 via the edge with id 1. Also the node with id 22 has the type of 3, the node with id 21 has the type of 4.
+means that the node with id 22 connects to the node with id 21 via the edge with id 1. Also, the node with id 22 has the type of 3, the node with id 21 has the type of 4.
 
 For the list of node types, see [this](https://github.com/bdqnghi/graph-ast/blob/master/srcml_node_types.tsv).
-
 For the list of edge types, see [this](https://github.com/bdqnghi/graph-ast/blob/master/edge_types.tsv).
