@@ -18,7 +18,8 @@ This tool leverages [protobuf](https://github.com/protocolbuffers/protobuf) to s
 To generate an AST representation of a file.
 
 ```bash
-  $ "docker run -v $(pwd):/e -it yijun/fast -p Test.java Test.pb
+  $ cd sample_files
+  $ docker run -v $(pwd):/e -it yijun/fast -p Test.java Test.pb
 ```
 
 The Test.pb file is the AST representation under the protobuf format. For example on how to read and traverse the tree, see this link.
@@ -36,5 +37,5 @@ For example, the edge:
 ```
 means that the node with id 22 connect to node with id 21 via the edge with id 1. Also the node with id 22 has the type of 3, the node with id 21 has the type of 4.
 
-For the list of edge types, see this link.
-F
+For the list of node types, see [this](https://github.com/bdqnghi/graph-ast/blob/master/srcml_node_types.tsv).
+For the list of edge types, see [this](https://github.com/bdqnghi/graph-ast/blob/master/edge_types.tsv).
