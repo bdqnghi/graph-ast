@@ -23,7 +23,7 @@ To generate an AST representation of a file.
 
 ```bash
   $ cd sample_files
-  $ docker run -v $(pwd):/e -it yijun/fast -p Test.java Test.pb
+  $ docker run -v $(pwd):/e -it yijun/fast -p Test.c Test.pb
 ```
 
 The Test.pb file is the AST representation under the protobuf format. For example on how to read and traverse the tree, see this link.
