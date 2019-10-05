@@ -13,7 +13,7 @@ First, pull the docker image of the f-ast tool:
 ```
 This tool leverages [protobuf](https://github.com/protocolbuffers/protobuf) to store the AST and make the parsing much faster than the other tools.
 
-#### Some example usages:
+## Example usages:
 
 To generate an AST representation of a file.
 
