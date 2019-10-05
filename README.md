@@ -4,7 +4,12 @@ Generate graph representation of the source code based on the paper: [Learning t
 
 ## Installation
 
-The backbone of this tool is the Abstract Syntax Tree (AST). The AST will be generated using the f-ast tool: [fAST: Flattening Abstract Syntax Trees for Efficiency, ICSE 2019](https://oro.open.ac.uk/59268/1/main.pdf). The tool supports any ANTLR4 grammar of over 170 different types of programming languages. This tool leverages [protobuf](https://github.com/protocolbuffers/protobuf) to store the AST and make the parsing much faster than the others.
+The backbone of this tool is the Abstract Syntax Tree (AST). The AST will be generated using the f-ast tool: [fAST: Flattening Abstract Syntax Trees for Efficiency, ICSE 2019](https://oro.open.ac.uk/59268/1/main.pdf). The tool supports any ANTLR4 grammar of over 170 different types of programming languages. 
+
+Some benefits of using the f-ast:
+
+- f-ast leverages [protobuf](https://github.com/protocolbuffers/protobuf) to store the AST and make the parsing much faster than the others.
+- f-ast is built based on [srcml](https://www.srcml.org/) and [srcSlice](https://github.com/srcML/srcSlice). That is, it can incorporate the data flow information, such as [the use-def chain](https://en.wikipedia.org/wiki/Use-define_chain) into the AST. The use-def chain is a critical information to generate the graph-ast.
 
 A runnable docker image of the tool can be pulled by using this command:
 
