@@ -1,6 +1,8 @@
 # Graph-AST
 
-A tool to generate the graph representation of the source code based on the paper: [Learning to Represent Program with Graph, ICLR 2018](https://arxiv.org/abs/1711.00740). For the Gated Graph Neural Network implementation that process the graph-ast, please refer to [GGNN for graph classification](https://github.com/bdqnghi/ggnn.tensorflow)
+A tool to generate the graph representation of the source code based on the paper: [Learning to Represent Program with Graph, ICLR 2018](https://arxiv.org/abs/1711.00740). 
+
+Note that this is only for the graph generation from the AST. For the Gated Graph Neural Network implementation that process the graph, please refer to [GGNN for graph classification](https://github.com/bdqnghi/ggnn.tensorflow)
 
 ## Installation
 
