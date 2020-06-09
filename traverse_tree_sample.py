@@ -1,15 +1,16 @@
 import pickle
+import sys
 
-file_path = "ProgramData_pb_slice_pkl/1/1001.pkl"
+file_path = "sample_files/Java/Bubblesort.pkl"
 
-def build_tree(script):
+def load_pickle(path):
     """Builds an AST from a script."""
    
-    with open(script, 'rb') as file_handler:
+    with open(path, 'rb') as file_handler:
         tree = pickle.load(file_handler)
       
         return tree
-    return "error"
+    return None
 #   return ast.parse(script)
 
 
@@ -50,7 +51,7 @@ def traverse_tree(root):
   
     return root_json, num_nodes
 
-data = build_tree(file_path)
-
-root = data.element
-traverse_tree(root)
+data = load_pickle(file_path)
+print(data)
+# root = data.element
+# traverse_tree(root)
